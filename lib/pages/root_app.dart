@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:instaclone/theme/colors.dart';
+import 'package:instaclone/pages/home_page.dart';
 
 class RootApp extends StatefulWidget {
   @override
@@ -22,16 +23,7 @@ class _RootAppState extends State<RootApp> {
 
   Widget getBody() {
     List<Widget> pages = [
-      Center(
-        child: Text(
-          "Homepage",
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
-        ),
-      ),
+      HomePage(),
       Center(
         child: Text(
           "Search",
